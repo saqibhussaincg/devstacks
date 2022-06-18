@@ -3,7 +3,9 @@ import Cards from './components/Cards'
 import Home from './components/Home'
 import Navbar from './components/Navbar'
 import QaDpartment from './components/QaDpartment'
+import QaStandard from './components/QaStandard'
 import QualityControl from './components/QualityControl'
+import RecomendDevstack from './components/RecomendDevstack'
 
 const App = () => {
   return (
@@ -13,6 +15,8 @@ const App = () => {
       <Cards />
       <QualityControl />
       <QaDpartment />
+      <QaStandard />
+      <RecomendDevstack />
     </div>
   )
 }

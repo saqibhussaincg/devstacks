@@ -101,6 +101,7 @@ const SectionData = styled.section`
         justify-content: center;
         flex-wrap: wrap;
         flex-direction: row;
+        justify-content: space-around;
         
         
 
