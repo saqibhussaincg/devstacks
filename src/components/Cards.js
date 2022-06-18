@@ -56,6 +56,7 @@ export default Cards;
 const Section = styled.section`
   display: flex;
   justify-content: center;
+  justify-content: space-around;
   padding: 2rem 0;
   background-color: #fff;
   
@@ -71,7 +72,7 @@ const Section = styled.section`
     border: 1px solid var(--primary-color);
     width: 300px;
     padding: 2rem 1rem;
-    margin: 1rem 1rem;
+    ${'' /* margin: 1rem 1rem; */}
 
     h3{
         font-size: 32px;
