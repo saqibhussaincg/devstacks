@@ -8,12 +8,14 @@ import QaStandard from './components/QaStandard'
 import QualityControl from './components/QualityControl'
 import RecomendDevstack from './components/RecomendDevstack'
 import Staff from './components/Staff'
+import TreeChart from './components/TreeChart'
 
 const App = () => {
   return (
     <div>
       <Navbar />
       <Home />
+      <TreeChart />
       <Cards />
       <QualityControl />
       <QaDpartment />
