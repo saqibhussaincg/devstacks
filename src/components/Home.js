@@ -36,7 +36,6 @@ const Section = styled.section`
   display: grid;
   grid-template-columns: 40%;
   align-items: center;
-  ${'' /* height: 80vh; */}
   height: 460px;
   background-color: #C4C4C4;
 
@@ -84,7 +83,45 @@ const Section = styled.section`
             }
   }
 
+  @media screen and (min-width: 280px) and (max-width: 1080px){
 
+  
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       margin-top: 100px;
+       
+   
+
+       .text{
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1{
+          font-size: 36px;
+          text-align: center;
+        }
+
+        p{
+          font-size: 18px;
+          text-align: center;
+        }
+
+        button{
+          display: flex;
+          width: 50vw;
+          height: 5vh;
+          justify-content: center;
+          align-items: center;
+          font-size: 20px;
+        }
+       }
+    }
+
+  
       
 
 `

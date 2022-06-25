@@ -56,7 +56,7 @@ const TreeChart = () => {
                     </div>
                 </div>
 
-                
+
 
 
             </div>
@@ -92,6 +92,31 @@ const Section = styled.section`
                 font-size: 2rem;
             }
         }
+    }
+
+    @media screen and (min-width: 280px) and (max-width: 1080px){
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+
+            .row{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+             
+
+                .col{
+                  
+                    justify-content: center;
+                    padding: 0 1rem;
+                    width: 100vw;
+                }
+               
+            }
+            
     }
 `
 

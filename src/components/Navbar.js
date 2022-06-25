@@ -1,20 +1,21 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import logo from "../assets/devstacklogo.png";
+import image from '../assets/balancingscales.png';
 
-import flag from "../assets/flag.png"
+
 
 import { BsToggleOn, BsToggleOff } from "react-icons/bs";
 
 const Navbar = () => {
 
-    const [navState, setNavState] = useState(false);
+  const [navState, setNavState] = useState(false);
 
-    return (
-        <Nav>
+  return (
+    <Nav>
       <div className="brand">
         <div className="logo">
-          <img src={logo} alt="Earthium" />
+          <img src={logo} alt="logo" />
         </div>
         <div className="toggle">
           {navState ? (
@@ -45,16 +46,22 @@ const Navbar = () => {
           </li>
         </ul>
 
-        
+        <div className="login-btn">
+          <button>
+            Contact Us
+          </button>
+        </div>
+
+      </div>
+      <div className='awaeenImg' style={{
+        display: "none"
+      }}>
+        <img src={image} />
       </div>
 
-      <div className="login-btn">
-          <button>
-           Contact Us
-          </button>
-      </div>
+
     </Nav>
-    )
+  )
 }
 
 export default Navbar
@@ -62,7 +69,6 @@ export default Navbar
 const Nav = styled.nav`
    display: flex;
    justify-content: space-around;
-   ${'' /* margin: 0rem 6rem; */}
    background-color: #fff;
    height: 150px;
    
@@ -86,7 +92,6 @@ const Nav = styled.nav`
         align-items: center;
         justify-content: space-between;
         justify-content: center;
-        ${'' /* width: 60%; */}
 
         ul{
             display:flex;
@@ -141,4 +146,74 @@ const Nav = styled.nav`
 
             }
       }
+
+
+    @media screen and (min-width: 280px) and (max-width: 1080px){
+      display: flex;
+      height: auto;
+      overflow-y: hidden;
+     
+    ${'' /* .awaeenImg {
+      display: inline !important;
+    } */}
+      
+    
+      .brand{
+        position: absolute;
+        width: 100%;
+        padding: 20px 2rem;
+        z-index: 2;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+       
+        
+
+          .toggle{
+            display: block;
+            color: #000;
+            svg{
+              font-size: 2rem;
+            }
+          }
+
+      }
+
+      .links{
+        position: absolute;
+        margin-top: 2rem;
+        width: 100vw;
+        padding: 3rem 0;
+        transition: 0.4s ease-in-out;
+        gap: 2rem;
+        flex-direction: column;
+        background-color: #3F3A38;
+        
+       
+
+
+        ul{
+          flex-direction: column;
+          gap: 1rem;
+          margin-top: 10px;
+          
+        }
+
+
+       
+      }
+
+      .login-btn{
+        position: relative;
+        flex-direction: row;
+      }
+
+      .show{
+        top: 0;
+      }
+
+      .hide{
+        top: -600px;
+      }
+    }
 ` 
