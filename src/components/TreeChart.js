@@ -111,7 +111,7 @@ const Section = styled.section`
                 .col{
                   
                     justify-content: center;
-                    padding: 0 1rem;
+                    padding: 1rem 1rem;
                     width: 100vw;
                 }
                

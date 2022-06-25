@@ -133,7 +133,12 @@ const SectionData = styled.section`
         }
 
         
-       
+        @media screen and (min-width: 280px) and (max-width: 1080px){
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 5rem;
+        }  
 
     
 `

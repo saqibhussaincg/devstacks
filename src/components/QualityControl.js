@@ -8,7 +8,9 @@ const QualityControl = () => {
         
         <Section>
             <SectionHeading>
+            <div className='headingmain'>
                 <h1>Comprehensive Approach To Quality </h1>
+                </div>
             </SectionHeading>
 
             <SectionData>
@@ -49,17 +51,26 @@ const Section = styled.section`
 `
 
 const SectionHeading = styled.section`
-       h1{
+
+        display: flex;
+
+      .headingmain{
+        h1{
         font-size: 50px;
-        padding-left: 5rem;
+        margin-left: 5rem;
        }
+
+      } 
     
   
 `
 
-const SectionData = styled.section`
+const SectionData = styled.section`{
     display: flex;
     justify-content: space-between;
+
+   
+    }
     
     .leftbox{
         width: 800px;
@@ -104,6 +115,61 @@ const SectionData = styled.section`
 
         p{
             font-size: 25px;
+        }
+
+    }
+
+    @media screen and (min-width: 280px) and (max-width: 1080px){
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+
+            
+        .headingmain{
+
+            h1{
+
+            padding: 4rem 4rem;
+            margin: 0 auto;
+            
+            }
+        }
+       
+         
+        .leftbox{
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             width: 100vw;
+             
+
+             h3{
+             align-items: center;
+             margin-right: 5rem;
+
+             }
+             
+
+            ul{
+                flex-direction: column;
+                margin-top: 2rem;
+               
+                li{
+                    text-align: center;
+                    padding-right: 5rem;
+                    align-items: center;
+                }
+            }
+
+            p{
+                margin-right: 5rem;
+                padding: 1rem 4rem;
+                
+            }
         }
 
     }

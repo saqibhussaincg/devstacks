@@ -6,6 +6,8 @@ const RecomendDevstack = () => {
     return (
         <Section>
             <SectionHeading>
+
+            <div className='links'>
                 <h1>Why we recommend Devstack?</h1>
                 <ul>
                     <li>Project Based Pricing</li>
@@ -13,6 +15,7 @@ const RecomendDevstack = () => {
                     <li>Milestone-based </li>
                     <li>Effort Based Pricing</li>
                 </ul>
+                </div>
             </SectionHeading>
 
 
@@ -47,8 +50,8 @@ const Section = styled.section`
 
 
 const SectionHeading = styled.section`
-
-h1{       
+.links{
+    h1{       
         display: flex;
         padding-left: 5rem;
         font-size: 48.83px;
@@ -86,6 +89,8 @@ h1{
                      }
             }
         }
+}
+
 
    
 `
@@ -116,5 +121,14 @@ const SectionContent = styled.section`
                 font-size: 25px;
             }
         }
+
+
+        @media screen and (min-width: 280px) and (max-width: 1080px){
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+}
 
 `
