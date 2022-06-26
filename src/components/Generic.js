@@ -88,4 +88,32 @@ const Section = styled.section`
       }
   }
   }
+
+  @media screen and (min-width: 280px) and (max-width: 1080px){
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+    
+   
+
+    .parentbox{
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      margin-top: 2rem;
+      width: 100vw;
+      
+
+     .box{
+      display: flex;
+     }
+    
+      
+    }
+
+  }
 `;

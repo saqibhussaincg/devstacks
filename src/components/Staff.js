@@ -14,7 +14,7 @@ const Staff = () => {
           <h1>Why we recommend Staff Augmentation ?</h1>
         </SectionHeading>
 
-        <SectionParentContent>
+        <SectionParentContent className="SectionParentContent">
           <div className="parenttext">
             <div className="text01">
               <p>
@@ -187,6 +187,46 @@ const SectionParentContent = styled.section`
           font-family: "Verdana";
           font-weight: 100;
         }
+      }
+    }
+  }
+
+  @media screen and (min-width: 280px) and (max-width: 1080px){
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: pink;
+   
+
+    
+   
+
+    .parenttext{
+      text-align: center;
+      
+     
+
+      .text01{
+        padding: 0 2rem;
+      }
+    }
+
+    .parentbox{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem 0rem;
+      
+     
+      
+    
+
+      .box{
+        display: flex;
+       
+
       }
     }
   }

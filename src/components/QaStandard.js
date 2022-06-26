@@ -11,6 +11,7 @@ import rectangle04 from "../assets/rectangle04.png";
 const QaStandard = () => {
   return (
     <Section>
+    
       <SectionHeading>
         <h1>QA Standards That Shaped The Development And Quality</h1>
       </SectionHeading>
